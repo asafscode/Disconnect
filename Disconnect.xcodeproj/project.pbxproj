@@ -7,16 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		45BAB711257D169200BD30FB /* Disconnect.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 45BAB710257D169200BD30FB /* Disconnect.hpp */; };
-		45BAB713257D169200BD30FB /* DisconnectPriv.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 45BAB712257D169200BD30FB /* DisconnectPriv.hpp */; };
 		45BAB715257D169200BD30FB /* Disconnect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45BAB714257D169200BD30FB /* Disconnect.cpp */; };
+		45BAB72E257D177500BD30FB /* liboshooks static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45BAB723257D175500BD30FB /* liboshooks static.a */; };
+		45BAB72F257D177500BD30FB /* liboshooks static.a in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 45BAB723257D175500BD30FB /* liboshooks static.a */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		45BAB722257D175500BD30FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45BAB71C257D175500BD30FB /* oshooks.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4527DCB42566876800EB58CB;
+			remoteInfo = "oshooks static";
+		};
+		45BAB724257D175500BD30FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45BAB71C257D175500BD30FB /* oshooks.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 457D7D342565AAD200310764;
+			remoteInfo = oshooks;
+		};
+		45BAB726257D175500BD30FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45BAB71C257D175500BD30FB /* oshooks.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4538C2EB256FC33C00E91DE0;
+			remoteInfo = "oshooks iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		45BAB730257D177600BD30FB /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				45BAB72F257D177500BD30FB /* liboshooks static.a in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		45BAB70D257D169200BD30FB /* libDisconnect.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libDisconnect.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		45BAB710257D169200BD30FB /* Disconnect.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Disconnect.hpp; sourceTree = "<group>"; };
-		45BAB712257D169200BD30FB /* DisconnectPriv.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DisconnectPriv.hpp; sourceTree = "<group>"; };
 		45BAB714257D169200BD30FB /* Disconnect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Disconnect.cpp; sourceTree = "<group>"; };
+		45BAB71C257D175500BD30FB /* oshooks.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = oshooks.xcodeproj; path = oshooks/oshooks.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45BAB72E257D177500BD30FB /* liboshooks static.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,8 +71,10 @@
 		45BAB704257D169200BD30FB = {
 			isa = PBXGroup;
 			children = (
+				45BAB71C257D175500BD30FB /* oshooks.xcodeproj */,
 				45BAB70F257D169200BD30FB /* Disconnect */,
 				45BAB70E257D169200BD30FB /* Products */,
+				45BAB72D257D177500BD30FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,11 +89,26 @@
 		45BAB70F257D169200BD30FB /* Disconnect */ = {
 			isa = PBXGroup;
 			children = (
-				45BAB710257D169200BD30FB /* Disconnect.hpp */,
-				45BAB712257D169200BD30FB /* DisconnectPriv.hpp */,
 				45BAB714257D169200BD30FB /* Disconnect.cpp */,
 			);
 			path = Disconnect;
+			sourceTree = "<group>";
+		};
+		45BAB71D257D175500BD30FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45BAB723257D175500BD30FB /* liboshooks static.a */,
+				45BAB725257D175500BD30FB /* liboshooks.dylib */,
+				45BAB727257D175500BD30FB /* liboshooks iOS.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45BAB72D257D177500BD30FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -63,8 +118,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45BAB711257D169200BD30FB /* Disconnect.hpp in Headers */,
-				45BAB713257D169200BD30FB /* DisconnectPriv.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +131,7 @@
 				45BAB709257D169200BD30FB /* Headers */,
 				45BAB70A257D169200BD30FB /* Sources */,
 				45BAB70B257D169200BD30FB /* Frameworks */,
+				45BAB730257D177600BD30FB /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -112,12 +166,42 @@
 			mainGroup = 45BAB704257D169200BD30FB;
 			productRefGroup = 45BAB70E257D169200BD30FB /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 45BAB71D257D175500BD30FB /* Products */;
+					ProjectRef = 45BAB71C257D175500BD30FB /* oshooks.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				45BAB70C257D169200BD30FB /* Disconnect */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		45BAB723257D175500BD30FB /* liboshooks static.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = "liboshooks static.a";
+			remoteRef = 45BAB722257D175500BD30FB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		45BAB725257D175500BD30FB /* liboshooks.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = liboshooks.dylib;
+			remoteRef = 45BAB724257D175500BD30FB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		45BAB727257D175500BD30FB /* liboshooks iOS.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = "liboshooks iOS.dylib";
+			remoteRef = 45BAB726257D175500BD30FB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		45BAB70A257D169200BD30FB /* Sources */ = {

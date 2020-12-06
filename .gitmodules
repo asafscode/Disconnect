@@ -1,0 +1,3 @@
+[submodule "oshooks"]
+	path = oshooks
+	url = https://github.com/asafscode/oshooks
